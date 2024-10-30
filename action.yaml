@@ -104,9 +104,9 @@ runs:
         # Set up a database                                                 #
         #####################################################################
 
-        -   name: Shutdown default MySQL
-            run: sudo service mysql stop
-            shell: bash
+#        -   name: Shutdown default MySQL
+#            run: sudo service mysql stop
+#            shell: bash
 
         -   name: Setup MySQL
             if: inputs.database == 'mysql'
